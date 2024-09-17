@@ -1,0 +1,414 @@
+[0.000000] (-) TimerEvent: {}
+[0.000405] (ex09) JobQueued: {'identifier': 'ex09', 'dependencies': OrderedDict()}
+[0.000480] (ex09) JobStarted: {'identifier': 'ex09'}
+[0.012752] (ex09) JobProgress: {'identifier': 'ex09', 'progress': 'cmake'}
+[0.013401] (ex09) Command: {'cmd': ['/usr/bin/cmake', '/home/ivan/robotics/lab2/ex09', '-DCMAKE_INSTALL_PREFIX=/home/ivan/robotics/lab2/ex09/install/ex09'], 'cwd': '/home/ivan/robotics/lab2/ex09/build/ex09', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ivan'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ivan/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ivan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1089'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ivan/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ivan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ivan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/IvanK:@/tmp/.ICE-unix/1089,unix/IvanK:/tmp/.ICE-unix/1089'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d048fa8_5d02_4d5e_aec5_919a2be3e2e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NL1BU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ivan/robotics/lab2/ex09/build/ex09'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ivan/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/ivan/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/ivan/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble')]), 'shell': False}
+[0.098866] (-) TimerEvent: {}
+[0.108177] (ex09) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.196795] (ex09) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.198968] (-) TimerEvent: {}
+[0.208578] (ex09) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299182] (-) TimerEvent: {}
+[0.325101] (ex09) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.335722] (ex09) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.336130] (ex09) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.336577] (ex09) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.340591] (ex09) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399368] (-) TimerEvent: {}
+[0.472955] (ex09) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.483018] (ex09) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.483404] (ex09) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.483993] (ex09) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.487488] (ex09) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499507] (-) TimerEvent: {}
+[0.599954] (-) TimerEvent: {}
+[0.700480] (-) TimerEvent: {}
+[0.703292] (ex09) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800650] (-) TimerEvent: {}
+[0.835010] (ex09) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.900888] (-) TimerEvent: {}
+[0.948524] (ex09) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.001035] (ex09) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.001499] (-) TimerEvent: {}
+[1.008589] (ex09) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.020212] (ex09) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.038066] (ex09) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.060733] (ex09) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101650] (-) TimerEvent: {}
+[1.114669] (ex09) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.201919] (-) TimerEvent: {}
+[1.302450] (-) TimerEvent: {}
+[1.403000] (-) TimerEvent: {}
+[1.446282] (ex09) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.503208] (-) TimerEvent: {}
+[1.603743] (-) TimerEvent: {}
+[1.704228] (-) TimerEvent: {}
+[1.804733] (-) TimerEvent: {}
+[1.905325] (-) TimerEvent: {}
+[2.005888] (-) TimerEvent: {}
+[2.038363] (ex09) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.106098] (-) TimerEvent: {}
+[2.206618] (-) TimerEvent: {}
+[2.267002] (ex09) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.298315] (ex09) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.300706] (ex09) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.306757] (-) TimerEvent: {}
+[2.335912] (ex09) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.336230] (ex09) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.336390] (ex09) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.336527] (ex09) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.366012] (ex09) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.406939] (-) TimerEvent: {}
+[2.465054] (ex09) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.466160] (ex09) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_generator_c>;$<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_typesupport_introspection_cpp>;/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_generator_c;/home/ivan/robotics/lab2/ex09/build/ex09/rosidl_generator_py\n'}
+[2.466400] (ex09) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.468869] (ex09) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.473902] (ex09) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.477241] (ex09) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.492795] (ex09) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.493129] (ex09) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.495543] (ex09) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.502549] (ex09) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.507076] (-) TimerEvent: {}
+[2.559922] (ex09) StdoutLine: {'line': b'-- Generating done\n'}
+[2.564223] (ex09) StdoutLine: {'line': b'-- Build files have been written to: /home/ivan/robotics/lab2/ex09/build/ex09\n'}
+[2.576412] (ex09) CommandEnded: {'returncode': 0}
+[2.579464] (ex09) JobProgress: {'identifier': 'ex09', 'progress': 'build'}
+[2.579704] (ex09) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ivan/robotics/lab2/ex09/build/ex09', '--', '-j12', '-l12'], 'cwd': '/home/ivan/robotics/lab2/ex09/build/ex09', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ivan'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ivan/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ivan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1089'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ivan/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ivan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ivan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/IvanK:@/tmp/.ICE-unix/1089,unix/IvanK:/tmp/.ICE-unix/1089'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d048fa8_5d02_4d5e_aec5_919a2be3e2e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NL1BU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ivan/robotics/lab2/ex09/build/ex09'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ivan/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/ivan/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/ivan/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble')]), 'shell': False}
+[2.607248] (-) TimerEvent: {}
+[2.640177] (ex09) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.656013] (ex09) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.670038] (ex09) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_ex09\n'}
+[2.707416] (-) TimerEvent: {}
+[2.807799] (-) TimerEvent: {}
+[2.908179] (-) TimerEvent: {}
+[2.968604] (ex09) StdoutLine: {'line': b'running egg_info\n'}
+[2.969441] (ex09) StdoutLine: {'line': b'creating ex09.egg-info\n'}
+[2.969717] (ex09) StdoutLine: {'line': b'writing ex09.egg-info/PKG-INFO\n'}
+[2.970037] (ex09) StdoutLine: {'line': b'writing dependency_links to ex09.egg-info/dependency_links.txt\n'}
+[2.970274] (ex09) StdoutLine: {'line': b'writing top-level names to ex09.egg-info/top_level.txt\n'}
+[2.970396] (ex09) StdoutLine: {'line': b"writing manifest file 'ex09.egg-info/SOURCES.txt'\n"}
+[2.972680] (ex09) StdoutLine: {'line': b"reading manifest file 'ex09.egg-info/SOURCES.txt'\n"}
+[2.973227] (ex09) StdoutLine: {'line': b"writing manifest file 'ex09.egg-info/SOURCES.txt'\n"}
+[3.008342] (-) TimerEvent: {}
+[3.013538] (ex09) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_ex09_egg\n'}
+[3.108481] (-) TimerEvent: {}
+[3.170045] (ex09) StdoutLine: {'line': b'[  3%] Built target ex09__cpp\n'}
+[3.186556] (ex09) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.186885] (ex09) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.188924] (ex09) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_c.dir/rosidl_generator_c/ex09/msg/detail/num__functions.c.o\x1b[0m\n'}
+[3.189268] (ex09) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.189445] (ex09) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_c.dir/rosidl_generator_c/ex09/msg/detail/full_name_message__functions.c.o\x1b[0m\n'}
+[3.192234] (ex09) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_c.dir/rosidl_generator_c/ex09/srv/detail/full_name_sum_service__functions.c.o\x1b[0m\n'}
+[3.192678] (ex09) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_c.dir/rosidl_generator_c/ex09/msg/detail/sphere__functions.c.o\x1b[0m\n'}
+[3.208941] (-) TimerEvent: {}
+[3.303599] (ex09) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libex09__rosidl_generator_c.so\x1b[0m\n'}
+[3.309112] (-) TimerEvent: {}
+[3.360563] (ex09) StdoutLine: {'line': b'[ 18%] Built target ex09__rosidl_generator_c\n'}
+[3.376777] (ex09) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.377043] (ex09) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.377149] (ex09) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.409249] (-) TimerEvent: {}
+[3.509635] (-) TimerEvent: {}
+[3.588459] (ex09) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ex09/msg/full_name_message__type_support.cpp.o\x1b[0m\n'}
+[3.591527] (ex09) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ex09/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[3.591906] (ex09) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ex09/msg/num__type_support.cpp.o\x1b[0m\n'}
+[3.592051] (ex09) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ex09/srv/full_name_sum_service__type_support.cpp.o\x1b[0m\n'}
+[3.609835] (-) TimerEvent: {}
+[3.690909] (ex09) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ex09/msg/detail/full_name_message__type_support.cpp.o\x1b[0m\n'}
+[3.691279] (ex09) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ex09/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[3.693362] (ex09) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ex09/msg/detail/sphere__type_support.cpp.o\x1b[0m\n'}
+[3.694128] (ex09) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ex09/srv/detail/full_name_sum_service__type_support.cpp.o\x1b[0m\n'}
+[3.711925] (-) TimerEvent: {}
+[3.722471] (ex09) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ex09/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[3.812081] (-) TimerEvent: {}
+[3.886922] (ex09) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_c.dir/rosidl_typesupport_c/ex09/msg/num__type_support.cpp.o\x1b[0m\n'}
+[3.912283] (-) TimerEvent: {}
+[3.961948] (ex09) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_c.dir/rosidl_typesupport_c/ex09/msg/full_name_message__type_support.cpp.o\x1b[0m\n'}
+[4.012446] (-) TimerEvent: {}
+[4.032546] (ex09) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_c.dir/rosidl_typesupport_c/ex09/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[4.085581] (ex09) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_c.dir/rosidl_typesupport_c/ex09/srv/full_name_sum_service__type_support.cpp.o\x1b[0m\n'}
+[4.093473] (ex09) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ex09/msg/detail/dds_fastrtps/full_name_message__type_support.cpp.o\x1b[0m\n'}
+[4.097221] (ex09) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ex09/msg/detail/dds_fastrtps/sphere__type_support.cpp.o\x1b[0m\n'}
+[4.097864] (ex09) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ex09/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[4.100423] (ex09) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ex09/srv/detail/dds_fastrtps/full_name_sum_service__type_support.cpp.o\x1b[0m\n'}
+[4.103533] (ex09) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libex09__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.112627] (-) TimerEvent: {}
+[4.140236] (ex09) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ex09/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[4.152884] (ex09) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libex09__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.170012] (ex09) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ex09/msg/detail/full_name_message__type_support.c.o\x1b[0m\n'}
+[4.192997] (ex09) StdoutLine: {'line': b'[ 61%] Built target ex09__rosidl_typesupport_cpp\n'}
+[4.209862] (ex09) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ex09/msg/detail/sphere__type_support.c.o\x1b[0m\n'}
+[4.214939] (-) TimerEvent: {}
+[4.247012] (ex09) StdoutLine: {'line': b'[ 63%] Built target ex09__rosidl_typesupport_c\n'}
+[4.252942] (ex09) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ex09/srv/detail/full_name_sum_service__type_support.c.o\x1b[0m\n'}
+[4.287144] (ex09) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ex09/msg/detail/sphere__type_support_c.cpp.o\x1b[0m\n'}
+[4.291289] (ex09) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ex09/msg/detail/full_name_message__type_support_c.cpp.o\x1b[0m\n'}
+[4.315086] (-) TimerEvent: {}
+[4.335071] (ex09) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library libex09__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.410267] (ex09) StdoutLine: {'line': b'[ 70%] Built target ex09__rosidl_typesupport_introspection_c\n'}
+[4.415260] (-) TimerEvent: {}
+[4.427984] (ex09) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/ex09__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ex09/srv/detail/full_name_sum_service__type_support_c.cpp.o\x1b[0m\n'}
+[4.461684] (ex09) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libex09__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.515490] (-) TimerEvent: {}
+[4.584516] (ex09) StdoutLine: {'line': b'[ 74%] Built target ex09__rosidl_typesupport_introspection_cpp\n'}
+[4.615666] (-) TimerEvent: {}
+[4.716177] (-) TimerEvent: {}
+[4.816628] (-) TimerEvent: {}
+[4.846335] (ex09) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libex09__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.893136] (ex09) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libex09__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.916856] (-) TimerEvent: {}
+[4.972787] (ex09) StdoutLine: {'line': b'[ 78%] Built target ex09__rosidl_typesupport_fastrtps_cpp\n'}
+[5.017007] (-) TimerEvent: {}
+[5.019895] (ex09) StdoutLine: {'line': b'[ 78%] Built target ex09__rosidl_typesupport_fastrtps_c\n'}
+[5.051234] (ex09) StdoutLine: {'line': b'[ 78%] Built target ex09\n'}
+[5.083976] (ex09) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.117156] (-) TimerEvent: {}
+[5.217574] (-) TimerEvent: {}
+[5.318056] (-) TimerEvent: {}
+[5.418520] (-) TimerEvent: {}
+[5.518939] (-) TimerEvent: {}
+[5.619388] (-) TimerEvent: {}
+[5.719860] (-) TimerEvent: {}
+[5.788462] (ex09) StdoutLine: {'line': b'[ 80%] Built target ex09__py\n'}
+[5.820036] (ex09) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_py.dir/rosidl_generator_py/ex09/msg/_num_s.c.o\x1b[0m\n'}
+[5.820336] (-) TimerEvent: {}
+[5.820475] (ex09) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_py.dir/rosidl_generator_py/ex09/msg/_full_name_message_s.c.o\x1b[0m\n'}
+[5.820603] (ex09) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_py.dir/rosidl_generator_py/ex09/srv/_full_name_sum_service_s.c.o\x1b[0m\n'}
+[5.820700] (ex09) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_generator_py.dir/rosidl_generator_py/ex09/msg/_sphere_s.c.o\x1b[0m\n'}
+[5.920544] (-) TimerEvent: {}
+[5.966485] (ex09) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ex09/libex09__rosidl_generator_py.so\x1b[0m\n'}
+[6.020699] (-) TimerEvent: {}
+[6.032288] (ex09) StdoutLine: {'line': b'[ 89%] Built target ex09__rosidl_generator_py\n'}
+[6.063410] (ex09) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ex09/_ex09_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.063692] (ex09) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ex09/_ex09_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.063801] (ex09) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/ex09__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ex09/_ex09_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.120892] (-) TimerEvent: {}
+[6.217570] (ex09) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ex09/ex09_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.217907] (ex09) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ex09/ex09_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.218219] (ex09) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ex09/ex09_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.221014] (-) TimerEvent: {}
+[6.278048] (ex09) StdoutLine: {'line': b'[100%] Built target ex09__rosidl_typesupport_introspection_c__pyext\n'}
+[6.278365] (ex09) StdoutLine: {'line': b'[100%] Built target ex09__rosidl_typesupport_c__pyext\n'}
+[6.280003] (ex09) StdoutLine: {'line': b'[100%] Built target ex09__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.301287] (ex09) CommandEnded: {'returncode': 0}
+[6.321197] (-) TimerEvent: {}
+[6.421638] (-) TimerEvent: {}
+[6.494839] (ex09) JobProgress: {'identifier': 'ex09', 'progress': 'install'}
+[6.509139] (ex09) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ivan/robotics/lab2/ex09/build/ex09'], 'cwd': '/home/ivan/robotics/lab2/ex09/build/ex09', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ivan'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ivan/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ivan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1089'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/ivan/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ivan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ivan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/IvanK:@/tmp/.ICE-unix/1089,unix/IvanK:/tmp/.ICE-unix/1089'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4d048fa8_5d02_4d5e_aec5_919a2be3e2e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NL1BU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ivan/robotics/lab2/ex09/build/ex09'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=de2ee4063bea14a751240f2366e82867'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ivan/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/ivan/ros2_ws/install/my_package/lib/python3.10/site-packages:/home/ivan/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ivan/ros2_ws/install/turtlesim:/home/ivan/ros2_ws/install/my_package:/home/ivan/ros2_ws/install/my_first_package:/opt/ros/humble')]), 'shell': False}
+[6.520974] (ex09) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.521377] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ament_index/resource_index/rosidl_interfaces/ex09\n'}
+[6.521644] (-) TimerEvent: {}
+[6.521863] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.522201] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.522362] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/full_name_sum_service.h\n'}
+[6.522579] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.522759] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__functions.c\n'}
+[6.522891] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__type_support.h\n'}
+[6.522972] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__struct.h\n'}
+[6.523063] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__functions.h\n'}
+[6.523133] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.523201] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/full_name_message.h\n'}
+[6.523320] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.523424] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/sphere.h\n'}
+[6.523579] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/num.h\n'}
+[6.523762] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.523950] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__type_support.h\n'}
+[6.524166] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__type_support.h\n'}
+[6.524342] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__functions.c\n'}
+[6.524534] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__functions.c\n'}
+[6.524700] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__functions.h\n'}
+[6.524923] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__type_support.h\n'}
+[6.525108] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__functions.c\n'}
+[6.525274] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__functions.h\n'}
+[6.525482] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__struct.h\n'}
+[6.525664] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__functions.h\n'}
+[6.525931] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__struct.h\n'}
+[6.526096] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__struct.h\n'}
+[6.526456] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/library_path.sh\n'}
+[6.526676] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/library_path.dsv\n'}
+[6.526977] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_generator_c.so\n'}
+[6.527510] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_generator_c.so" to ""\n'}
+[6.527668] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.527753] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.527873] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.528002] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__rosidl_typesupport_fastrtps_c.h\n'}
+[6.528157] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.528298] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.528436] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[6.528515] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[6.528640] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__rosidl_typesupport_fastrtps_c.h\n'}
+[6.528754] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.529246] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_fastrtps_c.so\n'}
+[6.529788] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.529971] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.530053] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.530131] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/full_name_sum_service.hpp\n'}
+[6.530241] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.530312] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__builder.hpp\n'}
+[6.530424] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__traits.hpp\n'}
+[6.530598] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__struct.hpp\n'}
+[6.530843] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.530968] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/sphere.hpp\n'}
+[6.531101] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/num.hpp\n'}
+[6.531238] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.531379] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__struct.hpp\n'}
+[6.531514] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__builder.hpp\n'}
+[6.531700] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__traits.hpp\n'}
+[6.531927] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__builder.hpp\n'}
+[6.532104] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__builder.hpp\n'}
+[6.532292] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__traits.hpp\n'}
+[6.532515] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__traits.hpp\n'}
+[6.532681] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__struct.hpp\n'}
+[6.532904] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__struct.hpp\n'}
+[6.533077] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/full_name_message.hpp\n'}
+[6.533297] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.533374] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.533518] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.533605] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/dds_fastrtps\n'}
+[6.533721] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.533866] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.533955] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.534070] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.534143] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.534264] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/dds_fastrtps\n'}
+[6.534435] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.534625] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.534914] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.535438] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.535585] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.535677] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.535766] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.535923] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__type_support.c\n'}
+[6.536009] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__rosidl_typesupport_introspection_c.h\n'}
+[6.536114] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.536184] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.536304] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.536377] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__type_support.c\n'}
+[6.536538] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__type_support.c\n'}
+[6.536765] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__rosidl_typesupport_introspection_c.h\n'}
+[6.537000] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[6.537162] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[6.537349] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__type_support.c\n'}
+[6.537601] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_introspection_c.so\n'}
+[6.538131] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.538259] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_c.so\n'}
+[6.538640] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_c.so" to ""\n'}
+[6.538799] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09\n'}
+[6.538915] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv\n'}
+[6.539006] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail\n'}
+[6.539117] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__type_support.cpp\n'}
+[6.539186] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/srv/detail/full_name_sum_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.539311] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg\n'}
+[6.539403] (ex09) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail\n'}
+[6.539527] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.539605] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/sphere__type_support.cpp\n'}
+[6.539763] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__type_support.cpp\n'}
+[6.539995] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.540220] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/num__type_support.cpp\n'}
+[6.540381] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/include/ex09/ex09/msg/detail/full_name_message__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.540625] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_introspection_cpp.so\n'}
+[6.541137] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.541287] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_cpp.so\n'}
+[6.541715] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_typesupport_cpp.so" to ""\n'}
+[6.541891] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/pythonpath.sh\n'}
+[6.542004] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/pythonpath.dsv\n'}
+[6.542184] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09-0.0.0-py3.10.egg-info\n'}
+[6.542459] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.542648] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.542859] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.543051] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.543274] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09\n'}
+[6.543435] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/_ex09_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.543602] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.543851] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.544097] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/libex09__rosidl_generator_py.so\n'}
+[6.544306] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.544555] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/_ex09_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.544750] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv\n'}
+[6.544898] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv/_full_name_sum_service_s.c\n'}
+[6.545158] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv/_full_name_sum_service.py\n'}
+[6.545351] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv/__init__.py\n'}
+[6.545513] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/__init__.py\n'}
+[6.545712] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/_ex09_s.ep.rosidl_typesupport_c.c\n'}
+[6.545908] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg\n'}
+[6.546045] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_full_name_message.py\n'}
+[6.546240] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_sphere_s.c\n'}
+[6.546423] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_num_s.c\n'}
+[6.546604] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_num.py\n'}
+[6.546873] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/__init__.py\n'}
+[6.547121] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_sphere.py\n'}
+[6.547420] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_full_name_message_s.c\n'}
+[6.593073] (ex09) StdoutLine: {'line': b"Listing '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09'...\n"}
+[6.593332] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/__init__.py'...\n"}
+[6.593447] (ex09) StdoutLine: {'line': b"Listing '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg'...\n"}
+[6.593552] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/__init__.py'...\n"}
+[6.593652] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_full_name_message.py'...\n"}
+[6.593751] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_num.py'...\n"}
+[6.593883] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/msg/_sphere.py'...\n"}
+[6.593999] (ex09) StdoutLine: {'line': b"Listing '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv'...\n"}
+[6.594120] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv/__init__.py'...\n"}
+[6.594220] (ex09) StdoutLine: {'line': b"Compiling '/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/srv/_full_name_sum_service.py'...\n"}
+[6.600293] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.601099] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.601362] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.601878] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.602168] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.602645] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/local/lib/python3.10/dist-packages/ex09/ex09_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.602779] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_generator_py.so\n'}
+[6.603271] (ex09) StdoutLine: {'line': b'-- Set runtime path of "/home/ivan/robotics/lab2/ex09/install/ex09/lib/libex09__rosidl_generator_py.so" to ""\n'}
+[6.603532] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/Num.idl\n'}
+[6.603741] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/FullNameMessage.idl\n'}
+[6.603897] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/Sphere.idl\n'}
+[6.604226] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/srv/FullNameSumService.idl\n'}
+[6.604478] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/Num.msg\n'}
+[6.604696] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/FullNameMessage.msg\n'}
+[6.604928] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/msg/Sphere.msg\n'}
+[6.605170] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/srv/FullNameSumService.srv\n'}
+[6.605404] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/srv/FullNameSumService_Request.msg\n'}
+[6.605646] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/srv/FullNameSumService_Response.msg\n'}
+[6.605999] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ament_index/resource_index/package_run_dependencies/ex09\n'}
+[6.606314] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ament_index/resource_index/parent_prefix_path/ex09\n'}
+[6.606537] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/ament_prefix_path.sh\n'}
+[6.606788] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/ament_prefix_path.dsv\n'}
+[6.607046] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/path.sh\n'}
+[6.607274] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/environment/path.dsv\n'}
+[6.607497] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/local_setup.bash\n'}
+[6.607735] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/local_setup.sh\n'}
+[6.608006] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/local_setup.zsh\n'}
+[6.608237] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/local_setup.dsv\n'}
+[6.608469] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/package.dsv\n'}
+[6.608795] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ament_index/resource_index/packages/ex09\n'}
+[6.609142] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_generator_cExport.cmake\n'}
+[6.609390] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.609650] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.609895] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.610174] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_generator_cppExport.cmake\n'}
+[6.610427] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.610680] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.610945] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.611209] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.611469] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_cExport.cmake\n'}
+[6.611718] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.612002] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.612251] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.612507] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_cppExport.cmake\n'}
+[6.612751] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.613049] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_generator_pyExport.cmake\n'}
+[6.613302] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/export_ex09__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.613543] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/rosidl_cmake-extras.cmake\n'}
+[6.613786] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.614068] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.614302] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.614556] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.614797] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.615058] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.615301] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09Config.cmake\n'}
+[6.615507] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/cmake/ex09Config-version.cmake\n'}
+[6.615739] (ex09) StdoutLine: {'line': b'-- Installing: /home/ivan/robotics/lab2/ex09/install/ex09/share/ex09/package.xml\n'}
+[6.619845] (ex09) CommandEnded: {'returncode': 0}
+[6.621927] (-) TimerEvent: {}
+[6.722409] (-) TimerEvent: {}
+[6.821857] (ex09) JobEnded: {'identifier': 'ex09', 'rc': 0}
+[6.822987] (-) TimerEvent: {}
+[6.823131] (-) EventReactorShutdown: {}

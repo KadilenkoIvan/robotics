@@ -1,0 +1,6 @@
+Starting >>> my_package
+Starting >>> turtlesim
+Finished <<< my_package [1.22s]
+Finished <<< turtlesim [1.70s]
+
+Summary: 2 packages finished [2.04s]

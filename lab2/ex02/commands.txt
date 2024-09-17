@@ -1,0 +1,6 @@
+1.
+ros2 pkg prefix ros2topic > package_path_ros2topic.txt
+
+2.
+cd $(ros2 pkg prefix action_tutorials_py)/lib/action_tutorials_py
+ls > ~/robotics/lab2/ex02/list_exec_action_tutorials.txt

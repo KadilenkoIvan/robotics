@@ -1,0 +1,9 @@
+{
+  "package_name": "ex09",
+  "non_idl_tuples": [
+    "/home/ivan/robotics/lab2/ex09:msg/Num.msg",
+    "/home/ivan/robotics/lab2/ex09:msg/FullNameMessage.msg",
+    "/home/ivan/robotics/lab2/ex09:msg/Sphere.msg",
+    "/home/ivan/robotics/lab2/ex09:srv/FullNameSumService.srv"
+  ]
+}

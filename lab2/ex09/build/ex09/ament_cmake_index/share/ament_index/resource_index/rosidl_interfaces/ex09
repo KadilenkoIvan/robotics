@@ -1,0 +1,10 @@
+msg/FullNameMessage.idl
+msg/FullNameMessage.msg
+msg/Num.idl
+msg/Num.msg
+msg/Sphere.idl
+msg/Sphere.msg
+srv/FullNameSumService.idl
+srv/FullNameSumService.srv
+srv/FullNameSumService_Request.msg
+srv/FullNameSumService_Response.msg
