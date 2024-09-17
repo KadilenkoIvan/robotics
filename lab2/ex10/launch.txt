@@ -1,0 +1,8 @@
+1 terminal:
+ros2 run turtlesim turtlesim_node
+
+2 terminal:
+ros2 run text_to_cmd_vel text_to_cmd_vel
+
+3 terminal:
+ros2 topic pub /cmd_text std_msgs/String "data: 'turn_left'"
