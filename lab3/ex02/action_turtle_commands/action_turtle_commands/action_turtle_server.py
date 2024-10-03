@@ -1,118 +1,88 @@
+import math
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer
-from for_lab3_2.action import MessageTurtleCommands
-from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
-import math
+from geometry_msgs.msg import Twist
+from rclpy.action import ActionServer
+from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
+from for_lab3_2.action import MessageTurtleCommands
 import time
 
-class ActionTurtleServer(Node):
+class CommandActionServer(Node):
+
     def __init__(self):
         super().__init__('action_turtle_server')
         
-        # Инициализация атрибута current_pose
-        self.current_pose = None
+        self.twist = Twist()
+        self.flag = 0
+        self.after_pose = Pose()
+        self.before_pose = Pose()
+        self.feedback_time = time.time()  # Добавляем переменную для отслеживания времени
         
+        self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self._action_server = ActionServer(
             self,
             MessageTurtleCommands,
             'move_turtle',
             self.execute_callback)
         
-        # Публикация команд движения
-        self.publisher_ = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
-        
-        # Подписка на топик /turtle1/pose
-        self.pose_subscription = self.create_subscription(
-            Pose, 'turtle1/pose', self.pose_callback, 10)
+        self.subscription = self.create_subscription(Pose, '/turtle1/pose', self.callback, 10)
+        self.subscription 
 
-        self.get_logger().info("Action Turtle Server started")
-
-    def pose_callback(self, msg):
-        """Callback для обновления текущей позиции черепахи."""
-        self.current_pose = msg
-        self.get_logger().info(f"Текущая позиция: x={msg.x}, y={msg.y}, theta={msg.theta}")
+    def callback(self, msg):
+        self.after_pose = msg
+        if self.flag == 1:
+            self.before_pose = msg
+            self.flag = 0
 
     def execute_callback(self, goal_handle):
-        goal = goal_handle.request
+        self.get_logger().info('Executing goal...')
+        self.flag = 1
+        
+        if goal_handle.request.command == 'forward':
+            self.twist.linear.x = float(goal_handle.request.s)
+            self.twist.angular.z = 0.0
+            
+        elif goal_handle.request.command == 'turn_left':
+            self.twist.linear.x = 0.0
+            self.twist.angular.z = float(goal_handle.request.angle) * math.pi / 180
+            
+        elif goal_handle.request.command == 'turn_right':
+            self.twist.linear.x = 0.0
+            self.twist.angular.z = -float(goal_handle.request.angle) * math.pi / 180
+            
+        self.publisher_.publish(self.twist)
+        
         feedback_msg = MessageTurtleCommands.Feedback()
-
-        if goal.command == "forward":
-            distance = goal.s
-            self.move_forward(distance, feedback_msg)
-        elif goal.command == "turn_left":
-            angle = goal.angle
-            self.turn(-angle, feedback_msg)
-        elif goal.command == "turn_right":
-            angle = goal.angle
-            self.turn(angle, feedback_msg)
-
+        feedback_msg.odom = 0
+        
+        while self.flag == 1 and (self.after_pose.linear_velocity == 0 or self.after_pose.angular_velocity == 0):
+            pass
+            
+        while self.after_pose.linear_velocity != 0 or self.after_pose.angular_velocity != 0:
+            current_time = time.time()  # Получаем текущее время
+            if current_time - self.feedback_time >= .5:  # Проверяем, прошла ли секунда
+                feedback_msg.odom = int(math.sqrt((self.after_pose.x - self.before_pose.x) ** 2 + (self.after_pose.y - self.before_pose.y) ** 2))
+                self.get_logger().info('Feedback: {0}'.format(feedback_msg.odom))
+                goal_handle.publish_feedback(feedback_msg)
+                self.feedback_time = current_time  # Обновляем время последнего вывода фидбека
+                
         goal_handle.succeed()
         result = MessageTurtleCommands.Result()
         result.result = True
         return result
 
-    def move_forward(self, distance, feedback_msg):
-        if not self.current_pose:
-            return False  # Если нет данных о позиции, движение невозможно
-
-        start_x = self.current_pose.x
-        start_y = self.current_pose.y
-
-        vel_msg = Twist()
-        vel_msg.linear.x = 1.0
-        vel_msg.angular.z = 0.0
-
-        self.publisher_.publish(vel_msg)
-
-        while True:
-            # Рассчитываем пройденное расстояние
-            current_distance = math.sqrt(
-                (self.current_pose.x - start_x)**2 + (self.current_pose.y - start_y)**2)
-
-            feedback_msg.odom = int(current_distance)
-            if current_distance >= distance:
-                break
-
-            self.publisher_.publish(vel_msg)
-            rclpy.spin_once(self)
-
-        # Остановить черепаху после достижения цели
-        vel_msg.linear.x = 0.0
-        self.publisher_.publish(vel_msg)
-        return True
-
-    def turn(self, angle, feedback_msg):
-        if not self.current_pose:
-            return False  # Если нет данных о позиции, поворот невозможен
-
-        target_theta = self.current_pose.theta + math.radians(angle)
-        vel_msg = Twist()
-        vel_msg.linear.x = 0.0
-        vel_msg.angular.z = 1.0 if angle > 0 else -1.0
-
-        self.publisher_.publish(vel_msg)
-
-        while True:
-            current_angle = self.current_pose.theta
-            if abs(current_angle - target_theta) < 0.05:  # Допускаем небольшую погрешность
-                break
-
-            self.publisher_.publish(vel_msg)
-            rclpy.spin_once(self)
-
-        # Остановить черепаху после поворота
-        vel_msg.angular.z = 0.0
-        self.publisher_.publish(vel_msg)
-        return True
-
 def main(args=None):
     rclpy.init(args=args)
-    action_turtle_server = ActionTurtleServer()
-    rclpy.spin(action_turtle_server)
-    #action_turtle_server.destroy_node()
-    #rclpy.shutdown()
+    action_turtle_server = CommandActionServer()
+    executor = MultiThreadedExecutor(num_threads=2)
+    executor.add_node(action_turtle_server)
+    executor.spin()
+    executor.shutdown()
+    action_turtle_server.destroy_node()
+    
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
