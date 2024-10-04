@@ -1,1 +1,1 @@
-ros2 launch lab4_2_rad lab4_2_rad.launch.py radius:=2.0 direction_of_rotation:=1
+ros2 launch lab4_2 lab4_2_fixed.launch.py radius:=2.0 direction_of_rotation:=1
