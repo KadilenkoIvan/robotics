@@ -3,12 +3,12 @@
 
   <!-- Константы -->
   <xacro:property name="base_length" value="1"/>
-  <xacro:property name="base_width" value="2"/>
+  <xacro:property name="base_width" value="1"/>
   <xacro:property name="base_height" value="0.5"/>
   <xacro:property name="wheel_radius" value="0.3"/>
   <xacro:property name="wheel_length" value="0.2"/>
-  <xacro:property name="wheel_mass" value="2.0"/>
-  <xacro:property name="base_mass" value="10.0"/>
+  <xacro:property name="wheel_mass" value="0.2"/>
+  <xacro:property name="base_mass" value="1.0"/>
 
   <!-- Базовый корпус робота -->
   <link name="base_link">
@@ -71,7 +71,7 @@
   </link>
 
     <!-- Левое переднее колесо -->
-  <link name="left_front_wheel">
+  <!--link name="left_front_wheel">
     <visual>
       <geometry>
         <cylinder length="${wheel_length}" radius="${wheel_radius}"/>
@@ -88,10 +88,10 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
     </inertial>
-  </link>
+  </link-->
 
   <!-- Правое переднее колесо -->
-  <link name="right_front_wheel">
+  <!--link name="right_front_wheel">
     <visual>
       <geometry>
         <cylinder length="${wheel_length}" radius="${wheel_radius}"/>
@@ -108,36 +108,38 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
     </inertial>
-  </link>
+  </link-->
 
   <!-- Соединения для колес -->
   <joint name="left_back_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_back_wheel"/>
-    <origin xyz="${base_length/-2 - wheel_length/2} ${base_width/2} 0" rpy="0 ${pi/2*-1} 0"/>
+    <!--origin xyz="${base_length/-2 - wheel_length/2} ${base_width/2} 0" rpy="0 ${pi/2*1} 0"/-->
+    <origin xyz="${base_length/-2 - wheel_length/2} 0 0" rpy="0 ${pi/2*1} 0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
   <joint name="right_back_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_back_wheel"/>
-    <origin xyz="${base_length/2 + wheel_length/2} ${base_width/2} 0" rpy="0 ${pi/2*1} 0"/>
+    <!--origin xyz="${base_length/2 + wheel_length/2} ${base_width/2} 0" rpy="0 ${pi/2*1} 0"/-->
+    <origin xyz="${base_length/2 + wheel_length/2} 0 0" rpy="0 ${pi/2*1} 0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
-  <joint name="left_front_wheel_joint" type="continuous">
+  <!--joint name="left_front_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_front_wheel"/>
     <origin xyz="${base_length/-2 - wheel_length/2} ${base_width/-2} 0" rpy="0 ${pi/2*-1} 0"/>
     <axis xyz="0 0 1"/>
-  </joint>
+  </joint-->
 
-  <joint name="right_front_wheel_joint" type="continuous">
+  <!--joint name="right_front_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_front_wheel"/>
-    <origin xyz="${base_length/2 + wheel_length/2} ${base_width/-2} 0" rpy="0 ${pi/2*1} 0"/>
+    <origin xyz="${base_length/2 + wheel_length/2} ${base_width/-2} 0" rpy="0 ${pi/2*-1} 0"/>
     <axis xyz="0 0 1"/>
-  </joint>
+  </joint-->
 
   <!-- Плагин для публикации состояний соединений -->
   <gazebo>
@@ -147,8 +149,8 @@
       </ros>
       <joint_name>left_back_wheel_joint</joint_name>
       <joint_name>right_back_wheel_joint</joint_name>
-      <joint_name>left_front_wheel_joint</joint_name>
-      <joint_name>right_front_wheel_joint</joint_name>
+      <!--joint_name>left_front_wheel_joint</joint_name-->
+      <!--joint_name>right_front_wheel_joint</joint_name-->
     </plugin>
   </gazebo>
 
@@ -160,10 +162,15 @@
         <remapping>cmd_vel:=/cmd_vel</remapping> <!-- Подключение к топику /cmd_vel -->
       </ros>
       <update_rate>100.0</update_rate> <!-- Частота обновления -->
+      
       <left_joint>left_back_wheel_joint</left_joint> <!-- Левое колесо -->
       <right_joint>right_back_wheel_joint</right_joint> <!-- Правое колесо -->
-      <wheel_separation>${base_width}</wheel_separation> <!-- Расстояние между колесами -->
+      <!--left_joint>left_front_wheel_joint</left_joint--> <!-- Левое колесо -->
+      <!--right_joint>right_front_wheel_joint</right_joint--> <!-- Правое колесо -->
+      
+      <wheel_separation>${base_width + wheel_length}</wheel_separation> <!-- Расстояние между колесами -->
       <wheel_diameter>${wheel_radius*2}</wheel_diameter> <!-- Радиус колес -->
+
       <odometrySource>joint_states</odometrySource> <!-- Источник одометрии -->
     </plugin>
   </gazebo>
