@@ -1,0 +1,5 @@
+colcon build --packages-select lab5_31
+source install/setup.bash 
+ros2 launch lab5_31 robot_gazebo.launch.py
+---
+ros2 run lab5_31 robot_controller_circle

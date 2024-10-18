@@ -1,0 +1,20 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    left_back_wheel_joint_controller:
+      type: "velocity_controllers/JointVelocityController"
+      joint: "left_back_wheel_joint"
+
+    right_back_wheel_joint_controller:
+      type: "velocity_controllers/JointVelocityController"
+      joint: "right_back_wheel_joint"
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+      publish_rate: 50
+      enable_odom_tf: true
+      left_wheel_names: ["left_back_wheel_joint"]
+      right_wheel_names: ["right_back_wheel_joint"]
+      wheel_separation: 2.0
+      wheel_radius: 0.3
