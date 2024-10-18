@@ -1,0 +1,8 @@
+colcon build --packages-select lab5_31
+source install/setup.bash 
+ros2 launch lab5_31 robot_gazebo.launch.py
+---
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+---OR---
+ros2 run lab5_31 robot_controller
+ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.0}}"
